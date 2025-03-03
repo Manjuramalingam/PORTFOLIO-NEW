@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manju Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div id="logo"><p>MR</p>
+                <img src="./nav.png" id="nav"></div>
+           
+                
+            <ul>
+                <li><a>Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#center">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            
+            
+        </div>
+        <div id="togg">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#center">Projects</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+        <div id="photo">
+            <img src="./MANJU IMAGE.jpeg" alt="MANJU R">
+            <div id="name">
+                <p>Hi I'm</p><h2>MANJU R</h2>
+                
+            </div>
+        </div>
+        <div id="box-c">
+            <div  class="box" id="box1"><a href="mailto:manjuramalingam796@gmail.com.com"><img src="./email icon.png" ></a></div>
+            <div class="box" id="box1"><a href="https://github.com/Manjuramalingam"><img src="./github icon.png" ></a></div>
+            <div class="box" id="box1"><a href="https://www.linkedin.com/in/manju-r-3b5942281/"><img src="./linked-in icon.png" ></a></div>
+            <div class="box" id="box1"><a href="https://wa.me/6379650668/"><img src="./whatsap icon.png" ></a></div>
+            <div class="box" id="box1"><a href="https://www.instagram.com/___man_ju____/"><img src="./instagram icon.png" ></a></div>
+            
+        <div id="about">
+            <h1>ABOUT ME</h1>
+            <p>
+                Passionate about software development and dedicated to building creative software solutions that address challenging problems. Enthusiastic about embracing new technologies and eager to apply my skills to drive innovation.My goal is to help with exciting projects while improving my skills with the latest technologies.
+                
+                
+
+            </p>
+        </div>
+        <div id="skills">
+            <h1>SKILLS</h1>
+            <div id="box-c">
+                <div class="box"><img src="./icons8-html-50.png"></div>
+                <div class="box"><img src="./icons8-css-50.png"></div>
+                <div class="box"><img src="./icons8-javascript-50.png"></div>
+                <div class="box"><img src="icons8-c-50.png"></div>
+                <div class="box"><img src="./icons8-mysql-50.png"></div>
+                <div class="box"><img src="./icons8-python-50.png"></div>
+            </div>
+        </div>
+        <div id="center">
+            <h1>PROJECTS</h1>
+            <div id="projects">
+                
+                <div id="project">
+                    <h2>CALCULATOR</h2>
+                    <img src="./calc.png" alt="">
+                    <p>Simple calculator</p>
+                    <div id="source">
+                        <a href="https://github.com/Manjuramalingam/calculator">source code</a>
+                    </div>
+                </div>
+                <div id="project">
+                    <h2>TEXT-TO-SPEECH</h2>
+                    <img src="./text to speech img.jpg" alt="">
+                    <p>Text to Speech converter</p>
+                    <div id="source">
+                        <a href="https://github.com/Manjuramalingam/project-code">source code</a>
+                        <a href="https://miniproject.pythonanywhere.com/">visit site</a>
+                    </div>
+                </div>
+                <div id="project">
+                    <h2>AI-DRIVEN EXPLORATION AND PREDICTION OF COMPANY REGISTRATION TRENDS WITH THE
+                        REGISTRAR OF COMPANIES (ROC)</h2>
+                    <img src="./ROC image.jpeg" alt="">
+                    <p>This project leverages machine learning algorithms to analyze historical company registration data from the ROC, identifying patterns and predicting future trends.
+                        </p>
+                    <div id="source">
+                        <a href="https://github.com/Manjuramalingam/NAN-MUDHALVAN">source code</a>
+                    </div>
+                </div>
+                
+        
+    </div>
+    <div id="contact">
+        <h1>CONTACT</h1>
+        <center>
+        <div ><a href="mailto:manjuramalingam796@gmail.com.com"><img src="./email icon.png" ></a></div>
+    </center>
+    </div>
+    <script>
+       const img = document.getElementById("nav");
+        img.addEventListener('click', () => {
+            const togg = document.getElementById("togg");
+            togg.style.display = togg.style.display === "block" ? "none" : "block";
+        });
+    </script>
+</body>
+        </html>

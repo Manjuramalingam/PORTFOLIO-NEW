@@ -1,0 +1,249 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+    color: white;
+    
+
+}
+.container{
+    background: linear-gradient(90deg, rgb(93, 190, 142) 21%, rgb(149, 183, 186) 62%, rgba(6,44,111,1) 100%);
+    padding: 10px;
+}
+#nav{
+    display: none;
+   cursor: pointer;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+}
+#nav:hover{
+    border: 2px solid black;
+}
+.nav-bar ul li{
+    display: inline-block;
+   margin: 10px 20px;
+    list-style: none;
+    font-weight: bolder;
+    
+}
+.nav-bar ul li a{
+    color: rgb(207, 207, 229);
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-bar {
+ display:flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+#logo{
+    flex: 1;
+    font-size: 18px;
+    margin: 10px 30px;
+    font-weight: bolder;
+}
+/* .nav-bar img{
+    width: 20px;
+    height: 20px;
+    float: left;
+    border: 1px solid rgb(8, 94, 64);
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 2px 2px 2px 1px;
+} */
+#last{
+    float: right;
+}
+#photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#photo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid rgb(25, 41, 141);
+    box-shadow: 5px 5px 5px rgb(38, 106, 154);
+    padding: 5px;
+    margin: 30px;
+}
+#photo div{
+    margin: 10px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 20px;
+}
+#photo img{
+    transition: transform 0.3s ease-in-out;
+}
+#photo img:hover{
+    transform: translateY(-20px);
+}
+#name h2{
+    color: rgb(4, 11, 12);
+}
+
+#about{
+    max-width: 850px;
+    margin: auto;
+}
+#about h1{
+    text-align: center;
+    color: rgb(4, 11, 12);
+    margin: 20px 30px;
+
+}
+#about p{
+    text-align: center;
+    max-width: 800px;
+    border: 2px solid rgb(101, 101, 157);
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #46247d;
+    color: aliceblue;
+    transition: transform 0.03s ease-in-out;
+}
+#about p:hover{
+    transform: translateY(-20px);
+}
+#skills h1{
+ text-align: center;
+ margin: 20px 20px;
+ color: rgb(4, 11, 12);
+}
+
+#box-c{
+ display: flex;   
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
+.box{
+    margin: 10px;
+}
+#box1 img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(63, 63, 162);
+    padding: 2px;
+}
+
+.box img{
+ width: 100px;
+ height: 100px;
+ border: 1px solid rgb(103, 103, 123);
+ padding: 5px;
+ 
+ border-radius: 10px;
+}
+.box img:hover{
+    cursor: pointer;
+    border: 5px solid rgb(47, 47, 103);
+}
+#box1 img:hover{
+    border: 2px solid rgb(47, 47, 103);
+}
+#projects{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#project{
+    width: 400px;
+    height: auto;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid rgb(93, 7, 128);
+    border-radius: 20px;
+}
+#project p{
+    margin: 10px;
+}
+#project img{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(74, 74, 227);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(140, 126, 188);
+}
+#project h2{
+    margin-bottom: 10px;
+    color: rgb(241, 243, 246);
+}
+#project img:hover{
+    border: 5px solid rgb(57, 57, 172);
+}
+#source{
+    text-align: center;
+}
+#source a{
+text-decoration: none;
+border: 1px solid rgb(0, 0, 0);
+padding :3px;
+border-radius: 5px;
+color: rgb(15, 12, 12);
+background-color: #0e9a3a;
+}
+#togg{
+    display: none;
+}
+#source a:hover{
+    background-color: grey;
+    color: aliceblue;
+}
+#center h1{
+    text-align: center;
+    margin: 20px 20px;
+    color: rgb(4, 11, 12);
+}
+@media only screen and (max-width:700px){
+    #photo{
+        display: block;
+        text-align: center;
+    }
+    .nav-bar ul li{
+        display:none;
+    }
+    #nav{
+        display: block;
+        
+    }
+    #logo{
+        display: flex;
+        
+    }
+    #logo p{
+        flex: 1;
+    }
+    #togg{
+       border: 2px solid rgb(185, 168, 168);
+       width: 100%;
+       text-align: start;
+       border-radius: 30px;
+    }
+    #togg ul li a{
+        text-decoration: none;
+        color: rgb(224, 209, 226);
+    }
+    #togg ul li a:hover{
+        cursor: pointer;
+        background: transparent;
+        padding: 5px;
+        border: 2px solid rgb(208, 127, 127);
+        border-radius: 3px;
+    }
+    #togg ul li{
+        margin: 30px;
+        list-style: none;
+        
+    }
+}
